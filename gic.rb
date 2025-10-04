@@ -5,21 +5,21 @@
 class Gic < Formula
   desc "Git-native dotfiles management that doesn't suck"
   homepage "https://github.com/yarlson/gic"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yarlson/gic/releases/download/v0.2.0/gic_Darwin_x86_64.tar.gz"
-      sha256 "348c9392385f2d106d320cbfaaa4857fd19ed16039a61515de9528a6d467466b"
+      url "https://github.com/yarlson/gic/releases/download/v0.3.0/gic_Darwin_x86_64.tar.gz"
+      sha256 "4d9ba66c15b2302240c6a72bbf8178c8f9d177319a6f011addb61c204c691876"
 
       def install
         bin.install "gic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yarlson/gic/releases/download/v0.2.0/gic_Darwin_arm64.tar.gz"
-      sha256 "74a11d18bf227274b0e7d44512142cff623256af16c28c9943724211f0c4bac3"
+      url "https://github.com/yarlson/gic/releases/download/v0.3.0/gic_Darwin_arm64.tar.gz"
+      sha256 "39333e2f65427af9d1982a38bce5476a8c00c29623676ee56b9152b6bea4d84f"
 
       def install
         bin.install "gic"
@@ -29,15 +29,15 @@ class Gic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/gic/releases/download/v0.2.0/gic_Linux_x86_64.tar.gz"
-      sha256 "562e8f12ae591b74a78da37520b9b45d1233fb4e75dab21fd7f34abce4d6d434"
+      url "https://github.com/yarlson/gic/releases/download/v0.3.0/gic_Linux_x86_64.tar.gz"
+      sha256 "677c79ed63091667da1c1b04e61a4d2cf52717f83907788a554fa2bdb87d3efc"
       def install
         bin.install "gic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/gic/releases/download/v0.2.0/gic_Linux_arm64.tar.gz"
-      sha256 "0a25cdfd3a69699b6cdf847998b2e4f33e02a798f832078ce529ad61b3c25a90"
+      url "https://github.com/yarlson/gic/releases/download/v0.3.0/gic_Linux_arm64.tar.gz"
+      sha256 "9d8ca396861e3ecaff47fed4cf249c2d3b92d5a5277331ac7d68b5686b9fd9c4"
       def install
         bin.install "gic"
       end
